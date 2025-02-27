@@ -10,36 +10,34 @@ import SpringAnimation
 
 final class ViewController: UIViewController {
 
-    @IBOutlet var springAnimationView: SpringView!
-    @IBOutlet var springAnimationLabel: SpringLabel!{
+    @IBOutlet var viewAnimation: SpringView!
+    @IBOutlet var labelAnimation: SpringLabel!{
         didSet {
-            springAnimationLabel.text = animation.description
+            labelAnimation.text = animation.description
         }
     }
     
     private var animation = Animation.randomAnimation
-
+    
     @IBAction func runButtonPressed(_ sender: UIButton) {
-        springAnimationLabel.animation = "fadeOut"
-        springAnimationLabel.animate()
+        labelAnimation.animation = "fadeOut"
+        labelAnimation.animate()
         
-        springAnimationLabel.animateNext { [unowned self] in
-            springAnimationLabel.text = animation.description
-            springAnimationLabel.animation = "fadeIn"
-            springAnimationLabel.animate()
+        labelAnimation.animateNext { [unowned self] in
+            labelAnimation.text = animation.description
+            labelAnimation.animation = "fadeIn"
+            labelAnimation.animate()
             
-            springAnimationView.animation = animation.name
-            springAnimationView.curve = animation.curve
-            springAnimationView.force = animation.force
-            springAnimationView.duration = animation.duration
-            springAnimationView.delay = animation.delay
-            springAnimationView.animate()
+            viewAnimation.animation = animation.preset
+            viewAnimation.curve = animation.curve
+            viewAnimation.force = animation.force
+            viewAnimation.duration = animation.duration
+            viewAnimation.delay = animation.delay
+            viewAnimation.animate()
             
             animation = Animation.randomAnimation
-            sender.setTitle("Run \(animation.name)", for: .normal)
+            sender.setTitle("Run \(animation.preset)", for: .normal)
         }
-        
     }
-    
 }
 

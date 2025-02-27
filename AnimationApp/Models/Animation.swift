@@ -7,7 +7,7 @@
 
 struct Animation: CustomStringConvertible{
     
-    let name: String
+    let preset: String
     let curve: String
     let force: Double
     let duration: Double
@@ -15,21 +15,21 @@ struct Animation: CustomStringConvertible{
     
     var description: String {
         """
-        preset: \(name)
-        curve: \(curve)
-        force: \(String(format: "%.02f", force))
-        duration: \(String(format: "%.02f", duration))
-        delay: \(String(format: "%.02f", delay))
+preset: \(preset)
+curve: \(curve)
+force: \(String(format: "%.02f", force))
+duration: \(String(format: "%.02f", duration))
+delay: \(String(format: "%.02f", delay))
 """
     }
+    
     static var randomAnimation: Animation {
         Animation(
-            name: DataStore.shared.animations.randomElement()?.rawValue ?? "wobble",
-            curve: DataStore.shared.curves.randomElement()?.rawValue ?? "easeIn",
-            force: Double.random(in: 1...1.5),
+            preset: DataStore.shared.animations.randomElement()?.rawValue ?? "wobble",
+            curve: DataStore.shared.curves.randomElement()?.rawValue ?? "linear",
+            force: Double.random(in: 0.8...1.5),
             duration: Double.random(in: 0.8...1.6),
-            delay: 1
+            delay: Double.random(in: 0.5...1.0)
         )
     }
-    
 }

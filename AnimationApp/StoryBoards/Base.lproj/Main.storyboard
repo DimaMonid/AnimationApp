@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina6_3" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,15 +13,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7V-yr-BCA" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="56.666666666666657" y="99" width="280" height="150"/>
+                                <rect key="frame" x="61" y="102" width="280" height="150"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Ezc-fz-Myp"/>
-                                    <constraint firstAttribute="width" constant="280" id="GsP-5j-ATH"/>
+                                    <constraint firstAttribute="width" constant="280" id="3uH-T6-Cez"/>
+                                    <constraint firstAttribute="height" constant="150" id="wDJ-eC-pKY"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -30,12 +30,12 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNG-xc-oFV">
-                                <rect key="frame" x="56.666666666666657" y="729" width="280" height="39"/>
+                                <rect key="frame" x="61" y="751" width="280" height="39"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Run">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-fQ-2Zc" customClass="SpringLabel" customModule="SpringAnimation">
-                                <rect key="frame" x="56.666666666666657" y="329" width="280" height="26.333333333333314"/>
+                                <rect key="frame" x="71" y="392" width="260" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -56,19 +56,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WNG-xc-oFV" secondAttribute="bottom" constant="50" id="9ZD-TO-bOE"/>
-                            <constraint firstItem="xfc-fQ-2Zc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BM3-n4-oOo"/>
-                            <constraint firstItem="WNG-xc-oFV" firstAttribute="width" secondItem="V7V-yr-BCA" secondAttribute="width" id="G2l-2O-YZY"/>
-                            <constraint firstItem="xfc-fQ-2Zc" firstAttribute="top" secondItem="V7V-yr-BCA" secondAttribute="bottom" constant="80" id="MQ3-vQ-LPs"/>
-                            <constraint firstItem="WNG-xc-oFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Meb-SK-See"/>
-                            <constraint firstItem="xfc-fQ-2Zc" firstAttribute="width" secondItem="V7V-yr-BCA" secondAttribute="width" id="V0q-yx-G5E"/>
-                            <constraint firstItem="V7V-yr-BCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uUa-8m-sKD"/>
-                            <constraint firstItem="V7V-yr-BCA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="xMl-n2-KTh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WNG-xc-oFV" secondAttribute="bottom" constant="50" id="0Lc-hq-5mv"/>
+                            <constraint firstItem="V7V-yr-BCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E6H-9n-QAM"/>
+                            <constraint firstItem="V7V-yr-BCA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="EB2-jo-B8q"/>
+                            <constraint firstItem="WNG-xc-oFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K0E-Eg-8M4"/>
+                            <constraint firstItem="xfc-fQ-2Zc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nir-rO-hBw"/>
+                            <constraint firstItem="xfc-fQ-2Zc" firstAttribute="width" secondItem="V7V-yr-BCA" secondAttribute="width" multiplier="0.928571" id="Ztc-a0-ghs"/>
+                            <constraint firstItem="xfc-fQ-2Zc" firstAttribute="top" secondItem="V7V-yr-BCA" secondAttribute="bottom" constant="140" id="Ztk-w0-Qik"/>
+                            <constraint firstItem="WNG-xc-oFV" firstAttribute="width" secondItem="V7V-yr-BCA" secondAttribute="width" id="udu-6p-ixy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="springAnimationLabel" destination="xfc-fQ-2Zc" id="ld4-KI-fpe"/>
-                        <outlet property="springAnimationView" destination="V7V-yr-BCA" id="hDY-eb-KeM"/>
+                        <outlet property="labelAnimation" destination="xfc-fQ-2Zc" id="ld4-KI-fpe"/>
+                        <outlet property="viewAnimation" destination="V7V-yr-BCA" id="hDY-eb-KeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
